@@ -13,7 +13,6 @@
 
 </head>
 <body>
-  
 
     <div class="container">
        <div class="title">
@@ -30,28 +29,66 @@
               <label for="email-cont">Email Address *</label><br>
               <input type="email" name="email-cont" id="email-cont">
          </div>     
+<br>
+        <div class="query-button">
+              Query Type* <br>
+              <button><input type="radio" name="radio-btn" id="radio-btn">
+                    General Enquiry
+              </button>
+              <button><input type="radio" name="radio-btn" id="radio-btn">
+                    Support Request
+              </button>
+        </div>
+        <br>
+        <div class="message-text">
+              <form action="/action_page.php">
+                  <label for="message-txt">Message *</label><br>
+                  <textarea id="message-txt" name="message-txt" rows="4" cols="50"></textarea>
+              </form>
+        </div>
+        <div class="checkbox-consent">
+               <form action="/action_page.php">
+                  <input type="checkbox" id="check-txt" name="check-txt">
+                  <label for="check-txt">I consent to being contacted by the team *</label>
+                <br>
+                <br>
+                  <label for="submit-btn"></label>
+                  <input type="submit" id="submit-btn" name="submit-btn" value="submit">
+              </form>
+        </div>
+
+
+
+
+
+
+
+ 
+
+
+
 
   This field is required
 
 
   This field is required
 
-  Email Address
+ 
   Please enter a valid email address
   This field is required
 
-  Query Type
-  General Enquiry
-  Support Request
+
+
+  
   Please select a query type
 
-  Message
+
   This field is required
 
-  I consent to being contacted by the team
+ 
   To submit this form, please consent to being contacted
 
-  Submit
+
 
   Message Sent!
   Thanks for completing the form. We'll be in touch soon!
