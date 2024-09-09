@@ -1,0 +1,22 @@
+:root {
+    --green200: hsl(148, 38%, 91%);
+    --green600: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+    --white: hsl(0, 0%, 100%);
+    --grey500: hsl(186, 15%, 59%);
+    --grey900: hsl(187, 24%, 22%);
+}
+
+
+
+.container {
+    display: grid;
+    place-content: center;
+    height:100vh;
+}
+
+
+
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
