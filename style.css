@@ -7,14 +7,67 @@
     --grey900: hsl(187, 24%, 22%);
 }
 
+* {
+    padding: 0;
+   margin-left: 20px;
+    box-sizing: border-box;
+}
 
+body {
+    background-color: hsl(148, 38%, 91%);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: "Karla", system-ui;
+  }
 
 .container {
     display: grid;
     place-content: center;
-    height:100vh;
+    height:600px;
+    background-color: var(--white);
+    border-radius: .5em;
+    width:550px;
+    
 }
 
+form {
+    margin-top: 10px;
+    width: 425px;
+}
+
+textarea#message-txt {
+        margin-left: -5px;
+        width: 425px;
+        border-radius: .5em;
+
+
+}
+input#submit-btn  {
+        background-color: var(--green600);
+        color: var(--white);
+        width: 425px;
+        height: 35px;
+        border-radius: .5em;
+        margin-left: -25px;
+}
+
+input#email-cont {
+        width: 425px;
+        height: 35px;
+        border-radius: .5em;
+}
+
+
+
+
+button, 
+input#first-n, 
+input#last-n {
+    width: 200px;
+    height: 35px;
+    border-radius: .5em;
+}
 
 
 

@@ -14,38 +14,62 @@
 </head>
 <body>
 
-    <div class="container">
-       <div class="title">
-              <h1>Contact Us</h1>
-        </div>
-        <div class="name-contact">
-              <label for="first-name">First Name *</label><br>
-              <input type="text" name="first-name" id="first-n">
-              <label for="last-name">Last Name *</label>
-              <input type="text" name="last-name" id="last-n">
-        </div>
-        <br>
-        <div class="email-contact">
-              <label for="email-cont">Email Address *</label><br>
-              <input type="email" name="email-cont" id="email-cont">
-         </div>     
-<br>
-        <div class="query-button">
-              Query Type* <br>
-              <button><input type="radio" name="radio-btn" id="radio-btn">
-                    General Enquiry
-              </button>
-              <button><input type="radio" name="radio-btn" id="radio-btn">
-                    Support Request
-              </button>
-        </div>
-        <br>
-        <div class="message-text">
-              <form action="/action_page.php">
-                  <label for="message-txt">Message *</label><br>
-                  <textarea id="message-txt" name="message-txt" rows="4" cols="50"></textarea>
-              </form>
-        </div>
+    <div class="contact-form">
+           <h1>Contact Us</h1>
+        
+        <form id="contact-form">
+                  <div class="form-item">
+                        <div class="first-name">
+                              <label for="first-name">First Name <span class="required-input">*</span></label>
+                              <input type="text" name="first-name" id="first-name">
+                              <p class="form-alert">This field is required</p>
+                        </div>
+                        
+                        <div class="last-name">
+                              <label for="last-name">Last Name <span class="required-input">*</span></label>
+                              <input type="text" name="last-name" id="last-name">
+                              <p class="form-alert">This field is required</p>
+                        </div>
+                  <div>     
+
+                  <div class="form-item">
+                              <label for="email">Email Address <span class="required-input">*</span></label>
+                              <input type="email" name="email" id="email">
+                              <p class="form-alert">Please enter a valid address</p>
+                  </div>
+                  
+                   <div class="form-item">
+                              <label for="query-type">Query Type <span class="required-input">*</span></label>
+                           
+                             
+                             <div class="radio-inputs">
+                                    <div class="radio-option">
+                                          <input type="radio" id="general-enquiry" name"query-type" value="General Enquiry">
+                                          <label for="general-enquiry">General Enquiry</label> 
+                                    </div>
+                                    <div class="radio-option">
+                                          <input type="radio" id="support-request" name"query-type" value="Support Request">
+                                          <label for="support-request">Support Request</label> 
+                                    </div>
+                              </div>
+
+                              <p class="form-alert">Please select a query type</p>
+                        </div>
+
+                  <div class="form-item">
+                              <label for="message">Message <span class="required-input">*</span></label> 
+                              <textarea name="message" id="message" rows="4"></textarea>
+                              <p class="form-alert">This field is required</p>
+                  </div>
+
+
+
+
+
+
+            
+    
+      
         <div class="checkbox-consent">
                <form action="/action_page.php">
                   <input type="checkbox" id="check-txt" name="check-txt">
@@ -53,7 +77,7 @@
                 <br>
                 <br>
                   <label for="submit-btn"></label>
-                  <input type="submit" id="submit-btn" name="submit-btn" value="submit">
+                  <input type="submit" id="submit-btn" name="submit-btn" value="Submit">
               </form>
         </div>
 
@@ -73,24 +97,25 @@
 
   This field is required
 
- 
+ <br>
   Please enter a valid email address
   This field is required
 
 
-
+<br>
   
   Please select a query type
 
 
   This field is required
 
- 
+ <br>
   To submit this form, please consent to being contacted
 
 
 
   Message Sent!
+  <br>
   Thanks for completing the form. We'll be in touch soon!
   
   <div class="attribution">
