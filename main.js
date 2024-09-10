@@ -72,7 +72,29 @@ form.addEventListener('submit', (e) => {
     }
 
     // Consent Validation
+    if(!consent) {
+        isValid = false
+
+        formAlert[5].classList.add('form-error')
+    } else {
+        formAlert[5].classList.remove('form-error')
+    }
+
+    //Form is valid
+    if(isValid) {
+        successMessage.classList.add('active')
+        form.reset()
+    }
     
+
+    // Email validation function
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email)
+    }
+
+
+
 
 
 
