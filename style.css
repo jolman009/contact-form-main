@@ -22,11 +22,11 @@ body {
     font-family: "Karla", sans-serif;
     display: grid;
     place-content: center;
-  }
+}
 
-  label {
+label {
         color:var(--dark-grey);
-  }
+}
 
 
 input[type='text'],
@@ -104,7 +104,6 @@ input[type='email'].form-error {
     border-radius: .35rem;
 }
     
- 
 .contact-form .form-item:nth-child(3) input[type='radio'] {
     appearance: none;
     width: .5rem;
@@ -182,29 +181,29 @@ input[type='email'].form-error {
 
 
 
- @keyframes fadeOut {
+@keyframes fadeOut {
     0%, 25%, 50%, 75% {
         opacity:1;
- } 
+} 
 
     100% {
         opacity: 0;
     }
- }
+}
 
- .success-message .message-header {
+.success-message .message-header {
     color: var(--white);
     margin-bottom: .5rem;
     font-weight: bold;
     display: flex;
     align-items: center;
     gap: .5rem;
- }
- 
+}
 
- .attribution { font-size: 11px; text-align: center; }
- .attribution a { color: hsl(228, 45%, 44%); }
- @media (max-width: 380px) {
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media (max-width: 380px) {
     .contact-form .form-item:nth-child(1) {
         flex-direction: column;
     }
