@@ -10,7 +10,7 @@ form.addEventListener('submit', (e) => {
     const queryType = document.querySelector('input[name="query-type"]:checked')
     const message = document.getElementById('message').value.trim()
     const consent = document.getElementById('consent').checked
-})
+
 
     const formAlert = document.querySelectorAll('.form-alert')
 
@@ -29,7 +29,7 @@ form.addEventListener('submit', (e) => {
 
 
     // Last Name Validation
-    if(firstName === '') {
+    if(lastName === '') {
         isValid = false
         
         document.querySelector('#last-name + .form-alert').style.display = 'block'
@@ -86,7 +86,7 @@ form.addEventListener('submit', (e) => {
         form.reset()
     }
     
-
+})
     // Email validation function
     function isValidEmail(email) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
