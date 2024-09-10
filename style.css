@@ -175,13 +175,14 @@ input[type='email'].form-error {
 .success-message.active {
     display: block;
     pointer-events: all;
+
+
     animation-name: fadeOut;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
 
-  .attribution { font-size: 11px; text-align: center; }
-  .attribution a { color: hsl(228, 45%, 44%); }
+
 
  @keyframes fadeOut {
     0%, 25%, 50%, 75% {
@@ -202,6 +203,9 @@ input[type='email'].form-error {
     gap: .5rem;
  }
  
+
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
  @media (max-width: 380px) {
     .contact-form .form-item:nth-child(1) {
         flex-direction: column;
