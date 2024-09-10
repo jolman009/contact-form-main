@@ -175,8 +175,6 @@ input[type='email'].form-error {
 .success-message.active {
     display: block;
     pointer-events: all;
-
-
     animation-name: fadeOut;
     animation-duration: 5s;
     animation-fill-mode: forwards;
